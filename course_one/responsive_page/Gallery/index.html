@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+		<title>Benjamin Franklin: Secular Saint</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="styles.css"/>	
+        <link rel="stylesheet" type="text/javascript" href="main.js"/>	
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		
+	<div class="container">
+		<h1>Ben's Life &mdash;In Images</h1>
+
+		<div class="row">
+			<div class="col-md-3">
+				<img id="image1" 
+				 class="crop-img" src="franklin_headphones.jpg" alt="Franklin: the rebel"/> 
+			</div>
+			<div class="col-md-3">
+				<img id="image2" class="crop-img" src="franklin_statesman.jpg" alt="The diplomat"/> 
+			</div>
+			<div class="col-md-3">
+				<img id="image3" class="crop-img" src="franklin_success.jpg" alt="The success story"/> 
+			</div>
+            
+            <div class="col-md-3">
+				<img id="image4" class="crop-img" src="franklin_kite.png" alt="Man of science & invention"/> 
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-1">
+				<button id="backward">&lt;</button>
+			</div>
+			<div class="col-md-10">
+				<img id="bigImage" class="large-img" src="franklin_headphones.jpg" alt="Franklin: the rebel"/> 
+			</div>
+			<div class="col-md-1">
+				<button id="forward">&gt;</button>
+			</div>
+		</div>
+        
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Say Hello to Ben!</h2>
+                <p>You can cycle through these images by clicking one of the buttons to either side, <br> or by clicking an image above.</p>
+            </div>
+        </div>
+        
+	</div>
+<script>
+		
+		var paused = false;
+
+		
+		$(".crop-img").click(function(){
+			$("#bigImage").attr('src', 
+				$(this).attr('src'));
+		});
+
+		
+		var counter = 1;
+		alert(counter);
+	
+		$("#image"+counter).click();
+
+		
+		$("#backward").click(function (){
+            $("#bigImage").fadeIn("slow");
+
+			counter = counter - 1;
+			
+			if(counter < 1){
+				counter = 4;
+			}
+			
+			$("#image"+counter).click();
+		});
+
+		
+		$("#forward").click(function (){
+            $("#image").slideDown(3000);
+
+			
+			counter = counter + 1;
+			
+			if(counter > 4){
+				counter = 1;
+			}
+			
+			$("#image"+counter).click();
+		});
+
+	
+		$("#bigImage").click(function (){
+			paused = !paused;
+		});
+
+        
+	</script>
+
+	</body>
+
+    <!--<footer>
+        <div class="footer-nav">
+        </div>
+
+    </footer> -->
+
+</html>
+
+
+
+
+
+
+
