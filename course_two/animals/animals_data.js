@@ -7,6 +7,15 @@
 var animals_data = {
 	category : [
 		{
+			name : "Mammals",
+			animals : [
+				{
+					image1 : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/AfricanWildCat.jpg/440px-AfricanWildCat.jpg",
+					image2 : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Kittyply_edit1.jpg/440px-Kittyply_edit1.jpg",
+					name : "Cat",
+					description : "The domestic cat (Felis catus or Felis silvestris catus) is a small, usually furry, domesticated, and carnivorous mammal. They are often called housecats when kept as an indoor pet or simply cats when there is no need to distinguish them from other felids and felines.[6] Cats are often valued by humans for companionship and their ability to hunt vermin."
+				},
+                {
 			name : "Reptiles",
 			animals : [
 				{
@@ -35,15 +44,6 @@ var animals_data = {
 				},
 			]
 		},
-		{
-			name : "Mammals",
-			animals : [
-				{
-					image1 : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/AfricanWildCat.jpg/440px-AfricanWildCat.jpg",
-					image2 : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Kittyply_edit1.jpg/440px-Kittyply_edit1.jpg",
-					name : "Cat",
-					description : "The domestic cat (Felis catus or Felis silvestris catus) is a small, usually furry, domesticated, and carnivorous mammal. They are often called housecats when kept as an indoor pet or simply cats when there is no need to distinguish them from other felids and felines.[6] Cats are often valued by humans for companionship and their ability to hunt vermin."
-				},
 				{
 					image1 : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Poligraf_Poligrafovich.JPG/340px-Poligraf_Poligrafovich.JPG",
 					image2 : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cavalier_King_Charles_Spaniel_trio.jpg/440px-Cavalier_King_Charles_Spaniel_trio.jpg",
