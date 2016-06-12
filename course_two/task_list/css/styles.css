@@ -1,0 +1,24 @@
+/*this page goes with the "Landing Page (Home)  page */
+
+* {
+    background-color: azure;
+    opacity: .99;
+
+}
+
+
+html {
+    font-family: Georgia sans-serif;
+    font-size: 20;
+    color: darkred;
+
+}
+
+
+ .main-nav {
+    color: darkred;
+    position: relative;
+    word-spacing: normal;
+    padding: 0.5%;
+    text-align: center;
+}

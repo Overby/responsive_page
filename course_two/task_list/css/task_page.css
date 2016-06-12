@@ -1,0 +1,26 @@
+
+html {
+    font-family: Georgia sans-serif;
+    font-size: 20;
+    color: darkred;
+}
+
+.main-navbar {
+    color: darkred;
+    position: relative;
+    text-indent: inherit;
+    word-spacing: normal;
+    padding: 0.5%;
+    text-align: center;
+}
+
+.my-photo {
+    width: 5%;
+    padding: 10px;
+}
+
+.breadcrumb {
+    color: darkred;
+        
+    
+}
